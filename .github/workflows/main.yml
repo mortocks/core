@@ -21,7 +21,7 @@ jobs:
       - uses: cicirello/jacoco-badge-generator@v2
         name: Generate Badge
         with:
-          jacoco-csv-file: coverage/apps/api/report.csv
+          jacoco-csv-file: coverage/apps/api/report.xml
           badges-directory: coverage/apps/api/badges
 
       - uses: JamesIves/github-pages-deploy-action@v4
