@@ -11,8 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        name: Test
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
       - run: yarn install
       - run: yarn nx test api --codeCoverage
+
+      - uses: JamesIves/github-pages-deploy-action@v4
+        name: Publish to pages
+        with:
+          folder: build/reports/jacoco/test/html
