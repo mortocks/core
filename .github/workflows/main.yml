@@ -21,4 +21,4 @@ jobs:
       - uses: JamesIves/github-pages-deploy-action@v4
         name: Publish to pages
         with:
-          folder: build/reports/jacoco/test/html
+          folder: coverage/apps/api
