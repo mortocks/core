@@ -100,5 +100,7 @@ buck-out/
 **/ios/Pods/
 **/vendor/bundle/
 
+### dotenv ###
+.env
 
 apps/native-app-e2e/artifacts
