@@ -1,5 +1,7 @@
 # Core
 
+[![Test Coverage](https://cdn.hackernoon.com/images/2hVuiN1gfbdO9OXUxjCttPNETq73-2022-08-08T22:19:48.257Z-cl6lbgrz6002p0as65v8sfgja)](https://mortocks.github.io/core/api/)
+
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>

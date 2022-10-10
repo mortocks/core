@@ -18,6 +18,12 @@ jobs:
       - run: yarn install
       - run: yarn nx test api --codeCoverage
 
+      - uses: cicirello/jacoco-badge-generator@v2
+        name: Generate Badge
+        with:
+          jacoco-csv-file: coverage/apps/api/report.csv
+          badges-directory: coverage/apps/api/badges
+
       - uses: JamesIves/github-pages-deploy-action@v4
         name: Publish to pages
         with:

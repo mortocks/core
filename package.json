@@ -85,6 +85,7 @@
     "jest": "28.1.1",
     "jest-circus": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
+    "jest-junit": "14.0.1",
     "jest-react-native": "18.0.0",
     "lint-staged": "^13.0.3",
     "metro": "0.72.2",
