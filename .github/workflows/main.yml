@@ -21,4 +21,4 @@ jobs:
       - uses: JamesIves/github-pages-deploy-action@v4
         name: Publish to pages
         with:
-          folder: coverage/apps/api
+          folder: coverage/apps
