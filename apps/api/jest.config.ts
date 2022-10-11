@@ -2,7 +2,6 @@
 export default {
   displayName: 'api',
   preset: '../../jest.preset.js',
-  reporters: ['default', ['jest-junit', { outputDirectory: 'coverage/apps/api', outputName: `report.xml` }]],
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',

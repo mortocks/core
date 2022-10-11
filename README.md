@@ -1,6 +1,8 @@
 # Core
 
-[![Test Coverage](https://cdn.hackernoon.com/images/2hVuiN1gfbdO9OXUxjCttPNETq73-2022-08-08T22:19:48.257Z-cl6lbgrz6002p0as65v8sfgja)](https://mortocks.github.io/core/api/)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/mortocks/core)
+
+[![Test Coverage](/coverage/badge.svg)
 
 This project was generated using [Nx](https://nx.dev).
 
