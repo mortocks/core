@@ -2,7 +2,7 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/mortocks/core)
 
-[![Test Coverage](/coverage/badge.svg)
+[![API Test Coverage](/coverage/badge.svg)
 
 This project was generated using [Nx](https://nx.dev).
 
