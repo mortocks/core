@@ -20,6 +20,6 @@ jobs:
 
       - name: Generate Badge
         uses: nrwl/nx-set-shas@v3
-      - run: yarn install make-coverage-badge
+      - run: yarn add make-coverage-badge
       - run: yarn make-coverage-badge
         
