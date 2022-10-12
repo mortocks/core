@@ -102,5 +102,6 @@ buck-out/
 
 ### dotenv ###
 .env
+*.env
 
 apps/native-app-e2e/artifacts
