@@ -20,7 +20,7 @@ Below are our core plugins:
 
 - [React](https://reactjs.org)
   - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
+- Web (no framework front-ends)
   - `npm install --save-dev @nrwl/web`
 - [Angular](https://angular.io)
   - `npm install --save-dev @nrwl/angular`
@@ -47,7 +47,7 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@core/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@core/my-lib`.
 
 ## Development server
 
