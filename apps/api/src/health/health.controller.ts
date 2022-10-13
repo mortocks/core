@@ -1,7 +1,9 @@
 import { Controller, Get } from '@nestjs/common'
 import { HealthCheckService, HttpHealthIndicator, HealthCheck, MemoryHealthIndicator } from '@nestjs/terminus'
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger'
 
 @Controller('health')
+@ApiTags('health')
 export class HealthController {
   constructor(
     private health: HealthCheckService,
@@ -11,6 +13,7 @@ export class HealthController {
 
   @Get()
   @HealthCheck()
+  @ApiOperation({ description: 'Check the health status of the api' })
   check() {
     return this.health.check([
       () => this.http.pingCheck('nestjs-docs', 'https://docs.nestjs.com'),
