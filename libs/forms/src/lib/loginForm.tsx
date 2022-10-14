@@ -10,6 +10,7 @@ export type TDefaultValues = Partial<AuthEmailPassDTO>
 const useAuthEmailPassForm = (props: IFormProps<AuthEmailPassDTO>) =>
   useForm<AuthEmailPassDTO>({
     resolver,
+    mode: 'all',
     ...props,
   })
 

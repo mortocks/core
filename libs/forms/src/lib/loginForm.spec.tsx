@@ -15,19 +15,18 @@ function TestComponent({ defaultEmail = 'name@email.com', submitCallback }: Test
       password: 'pass',
     },
   })
-  const { email, password } = getValues()
+  const { email } = getValues()
 
-  const onSubmit = () => {
-    console.log('Boop', email)
+  const onSubmit = (d: AuthEmailPassDTO) => {
     if (submitCallback) {
-      submitCallback({ email, password })
+      submitCallback(d)
     }
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div data-testid="emailValue">{email}</div>
-      <input data-testid="emailInput" {...register('email')} type="email" />
+      <input data-testid="emailInput" defaultValue={'email'} {...register('email')} />
       <button type="submit" data-testid="submitButton">
         Submit
       </button>
@@ -55,8 +54,7 @@ describe('useAuthEmailPassForm', () => {
 
     const inputEl = getByTestId<HTMLInputElement>(container, 'emailInput')
     const buttonEl = getByTestId<HTMLButtonElement>(container, 'submitButton')
-    await user.type(inputEl, 'test@mail.com')
-    await fireEvent.blur(inputEl)
+    fireEvent.change(inputEl, { target: { value: 'test@mail.com' } })
 
     await act(async () => {
       await user.click(buttonEl)
@@ -64,7 +62,7 @@ describe('useAuthEmailPassForm', () => {
 
     expect(inputEl.value).toBe('test@mail.com')
     expect(spy).toBeCalledTimes(1)
-    expect(spy).toBeCalledWith({ email: '', password: 'pass' })
+    expect(spy).toBeCalledWith({ email: 'test@mail.com', password: 'pass' })
   })
 
   it('updating should not trigger re-render with live updating', async () => {
