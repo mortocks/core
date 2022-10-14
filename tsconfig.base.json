@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      // https://github.com/nrwl/nx/issues/10082
+      "@core/forms": ["libs/forms/src/index.ts"],
+      "@core/models/auth": ["libs/models/src/lib/auth.ts"],
+      "@core/models/users": ["libs/models/src/lib/users.ts"],
       "@core/models": ["libs/models/src/index.ts"]
     }
   },

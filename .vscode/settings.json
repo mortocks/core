@@ -2,7 +2,8 @@
   "cSpell.words": [
     "lcov",
     "nestjs",
-    "nrwl"
+    "nrwl",
+    "testid"
   ],
   "cSpell.ignorePaths": [
     "package(-lock)?.json",
